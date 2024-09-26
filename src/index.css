@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --branco: #fff;
+  --preto: #0a0a0a;
+  --erro: #bd2f2f;
+
+  --marinho-900: #030407;
+  --marinho-800: #0c101c;
+  --marinho-700: #13172a;
+  --marinho-600: #191f38;
+  --marinho-500: #1f2746; /* cor padrão Customax*/
+  --marinho-400: #353d59;
+  --marinho-300: #62687e;
+  --marinho-200: #a5a9b5;
+  --marinho-100: #e9e9ed;
+
+  --roxo-900: #1c0e1c;
+  --roxo-800: #381c38;
+  --roxo-700: #552a54;
+  --roxo-600: #713870;
+  --roxo-500: #8d468c; /* cor padrão Customax*/
+  --roxo-400: #985998;
+  --roxo-300: #af7eaf;
+  --roxo-200: #d1b5d1;
+  --roxo-100: #f4edf4;
+
+  --azul-900: #0a202b;
+  --azul-800: #144056;
+  --azul-700: #1f5f81;
+  --azul-600: #297fac;
+  --azul-500: #339fd7; /* cor padrão Customax*/
+  --azul-400: #5cb2df;
+  --azul-300: #85c5e7;
+  --azul-200: #add9ef;
+  --azul-100: #ebf5fb;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font: 14px;
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Lucida Grande', Arial,
+    monospace;
+  background-color: var(--azul-100);
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Lucida Grande', Arial,
+    monospace;
+}
+
+.content {
+  color: var(--marinho-400);
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Lucida Grande', Arial,
+    monospace;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  margin-bottom: 6px;
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-3 {
+  width: 25%; /* width: calc((3 / 12) * 100%); */
+}
+
+.col-4 {
+  width: 33.33%; /* width: calc((3 / 12) * 100%); */
+}
+
+.col-6 {
+  width: 50%; /* width: calc((6 / 12) * 100%); */
+}
+
+.col-9 {
+  width: 75%; /* width: calc((9 / 12) * 100%); */
+}
+
+.col label {
+  font-size: 1rem;
+  margin-bottom: 3px;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 680px) {
+  .col {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
